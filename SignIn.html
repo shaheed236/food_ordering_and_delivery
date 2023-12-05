@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="logo.jpg" rel="icon" type="image/x-icon">
+    <title>Sign In</title>
+    <style>
+
+        body {
+            background-image: url(assets/images/log\ in.jpg);
+            background-position:center;
+            background-size: cover;
+            font-family: 'Popping', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-weight: 800px;
+        }
+
+        .login-container {
+            margin-top: 2%;
+            align-items: center;
+            background-color: #ffffff4c;
+            padding: 100px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            align-content: center;
+        }
+
+        .login-container h1  {
+            text-align: center;
+            color: rgb(80, 12, 126);
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            font-size: 14px;
+            color: #090606;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        .form-group button:hover{
+            background-color: purple;
+        }
+
+        h1:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Sign In</h1>
+        <form class="login-form">
+            <div class="form-group">
+                <label style="font-weight: 900px;" for="username">Username:</label>
+                <input placeholder="Username" type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input style="border: 0;" placeholder="Password" type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
